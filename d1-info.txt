@@ -1,0 +1,23 @@
+For dataset1:
+1. I have used plotly library to plot the graph
+2. The map is stores in variable p_plot
+3. Steps to run:
+	a.install.packages('plotly')
+	b.source('dataset1.R')
+	c.p_plot
+
+For dataset2:
+1. For dataset2 my labels are: labl,bwld,mgcd
+2. imported .txt into sql tables
+3. Tables created: labl,bwld,mgcd
+4. Provide to ways to find date corresponding to max change
+5. Run the dataset2.sql file
+
+For dataset3:
+1.The .csv file is missing headers so while doing mongoimport it gave error.
+2. I ran a script in R which took the csv, converted it to data frame and wrote back the csv. This added the headers to the csv file.
+3.Steps to run:
+	a. Do the mongoimport:
+		mongoimport -d test -c dvv223_d24 --type csv --file '/home/2018/spring/			nyu/6513/dvv223/dvv223_d24.csv' --headerline
+
+	b. Run the mongo aggregate queries	
